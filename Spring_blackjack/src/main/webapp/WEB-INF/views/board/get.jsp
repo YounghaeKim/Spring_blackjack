@@ -495,6 +495,14 @@ $(document).ready(function() {
 	}
 	
 	
+	//업로드 원본 이미지가 보이는 창을 닫는다.
+	$(".bigPictureWrapper").on("click", function(e){
+		$(".bigPicture").animate({width:'0%', height: '0%'}, 1000);
+		setTimeout(function(){
+			$(".bigPictureWrapper").hide();
+		}, 1000);
+	});
+	
 	
 });
 </script>

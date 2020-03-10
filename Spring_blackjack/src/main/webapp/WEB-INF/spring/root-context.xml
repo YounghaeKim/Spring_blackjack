@@ -7,7 +7,9 @@
 	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
 	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
@@ -53,6 +55,11 @@
    	<aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
    	<!-- 인터페이스로 구성되지 않은 함수는 proxy-target-class="true"를 선언하여 클래스도 인식가능하게 해야한다. -->
    	<!-- AOP 설정 End-->
+   	
+   	<!-- quartz 설정 -->
+   	<context:component-scan base-package="www.spring.com.board.task"></context:component-scan>
+   	
+   	<task:annotation-driven/> <!-- quartz 설정 -->
    	
 </beans>
 

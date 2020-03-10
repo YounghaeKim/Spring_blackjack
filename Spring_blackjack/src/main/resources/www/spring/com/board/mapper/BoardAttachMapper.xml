@@ -20,5 +20,15 @@
 	<select id="findByBno" resultType="www.spring.com.board.model.BoardAttachVO">
 	select * from qna_attach where bno = #{bno}
 	</select>
+	
+	<delete id="deleteAll">
+	
+	delete qna_attach where bno = #{bno}
+	
+	</delete>
+	
+	<select id="getOldFiles" resultType="www.spring.com.board.model.BoardAttachVO">
+	select * from qna_attach where uploadpath = to_char(sysdate -1,'yyyy\mm\dd')	
+	</select>
 
 </mapper>

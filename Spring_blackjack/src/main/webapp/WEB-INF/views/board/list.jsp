@@ -20,7 +20,7 @@
       </div>
 
       <div class="column middle">
-         <h1 style="color:#F7F8E0; font-family:verdana; text-align:center; background-color:DodgerBlue;">고객 게시판</h1>
+         <h1 style="color:#F7F8E0; font-family:verdana; text-align:center; background-color:#1b2936;">고객 게시판</h1>
          <!--
       <img alt="casino" src="resources/img/main.png" style="width:100%">
         -->

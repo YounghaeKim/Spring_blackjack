@@ -1,6 +1,6 @@
 drop SEQUENCE seq_qnaboard;
 
-DROP TABLE qna_board;
+DROP TABLE qna_board cascade constraints;
 
 create sequence seq_qnaboard;
 

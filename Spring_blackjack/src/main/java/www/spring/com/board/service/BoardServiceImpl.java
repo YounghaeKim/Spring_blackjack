@@ -59,17 +59,36 @@ public class BoardServiceImpl implements BoardService {
 		return mapper.getTotalCount(cri);
 	}
 
+	@Transactional
 	@Override
 	public boolean modify(BoardVO board) { //수정하다
 
-		System.out.println("modify테스트 입니다. : " + board);
-		return mapper.update(board) == 1;
+		log.info("modify..................." + board);
+		
+		attachMapper.deleteAll(board.getBno());
+		
+		boolean modifyResult = mapper.update(board) == 1 ;
+		
+		if (modifyResult && board.getAttachList() != null && board.getAttachList().size() > 0) {
+			
+			board.getAttachList().forEach(attach -> {
+				
+				attach.setBno(board.getBno());
+				attachMapper.insert(attach);
+			});
+		}
+		
+		return modifyResult;
 	}
-
+	
+	@Transactional //첨부파일 삭제와 실제 게시물의 삭제가 같이 처리되도록 트랜잭션하에 delleteAll()을 호출
 	@Override
 	public boolean remove(Long bno) {
 		
-		System.out.println("remove테스트 입니다. :" + bno );
+		log.info("remove...." + bno);
+		
+		attachMapper.deleteAll(bno);
+		
 		return mapper.delete(bno) == 1;
 	}
 /*

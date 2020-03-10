@@ -320,11 +320,13 @@ border: 1px solid black;
 
 /* reply */
 .panel_head {
-	background-color: #8edbff;
+	background-color: #1b2936;
 	height: 50px;
-	width: 100%;
+	width: 96%;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 1%;
 	
 	position: static;
 	overflow: auto;
@@ -332,7 +334,7 @@ border: 1px solid black;
 	font-family: Tahoma, Geneva, sans-serif;
 	display: inline-block;
 	font-size: 35px;
-	color: #0f3140;
+	color: #ffffff;
 	
 }
 
@@ -357,7 +359,7 @@ border: 1px solid black;
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #8080c0; 
+	background-color: #1b2936; 
 	position: static;
 	overflow: auto;
 	text-align: center;

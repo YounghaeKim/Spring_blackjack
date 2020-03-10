@@ -1,3 +1,5 @@
+drop table qna_attach cascade constraints;
+
 CREATE TABLE qna_attach (
     uuid VARCHAR2(100) not null,
     uploadPath VARCHAR2(200) not null,

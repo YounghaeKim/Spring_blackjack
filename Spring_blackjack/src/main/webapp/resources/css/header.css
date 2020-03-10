@@ -111,7 +111,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #9055A2;
+  background-color: #1b2936;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -131,6 +131,6 @@ body {
 }
 
 .topnav li a:hover {
-  background-color: #D499B9;
+  background-color: #7ed8ca;
   
 }
