@@ -27,28 +27,28 @@ pageEncoding="UTF-8"%>
                <table>
                   <tr>
                      <td style='width: 100px'>❡ ID ☪</td>
-                     <td><input type="text" size=25 id="id" name="id">
-                     <input type="button"  value="중복체크"></td>
+                     <td><input required type="text" size=25 id="id" name="id">
+                     <input required type="button"  value="중복체크"></td>
                   </tr>
                   <tr>
                      <td>❡ Password ☪</td>
-                     <td><input type="password" size=37 name="password" id="password"></td>
+                     <td><input required type="password" size=37 name="password" id="password"></td>
                   </tr>
                   <tr>
                      <td>❡ Password ☪(확인)</td>
-                     <td><input type="password" size=37 name="rePassword" id="rePassword"></td>
+                     <td><input required type="password" size=37 name="rePassword" id="rePassword"></td>
                   </tr>
                   <tr>
                      <td>❡ Phone Number ☪</td>
-                     <td><input type="text" size=37 name="phoneNumber" id="phoneNumber" value=""></td>
+                     <td><input required type="text" size=37 name="phoneNumber" id="phoneNumber" value=""></td>
                   </tr>
                   <tr>
                      <td>❡ E-mail ☪</td>
-                     <td><input type="text" size=37 name="email" id="email" value=""></td>
+                     <td><input required type="text" size=37 name="email" id="email" value=""></td>
                   </tr>
                   <tr>
                      <td style='width: 100px'>❡ Name ☪</td>
-                     <td><input type="text" size=37 name="name" id="name" value=""></td>
+                     <td><input required type="text" size=37 name="name" id="name" value=""></td>
                   </tr>
                   <tr>
                      <td style='width: 100px'>❡ Sex ☪ </td>

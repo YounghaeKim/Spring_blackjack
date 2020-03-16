@@ -94,7 +94,7 @@ $(document).ready(function(e){
 	
 	var formObj = $("form[role='form']");
 	
-	$("button[type='submit']").on("click", function(e){
+	$("button[type='submit']").on("onsubmit", function(e){
 		// └submit button을 클릭했을때 첨부파일 관련 처리를 할 수 있도록 기본 동작을 막는작업
 		
 		e.preventDefault();
